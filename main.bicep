@@ -21,7 +21,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-06-01' = {
   }
 }
 
-module webModule '../module/webapp.bicep' = {
+module webModule './module/webapp.bicep' = {
   name: 'webDeploy'
   params: {
    
